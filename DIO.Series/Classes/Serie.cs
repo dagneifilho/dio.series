@@ -24,6 +24,13 @@ namespace DIO.Series {
         public int RetornaId() {
             return Id;
         }
+        public string RetornaExcluido(){
+            if (Excluido){
+                return "Excluida";
+            } else {
+                return "Disponível";
+            }
+        }
         public void Excluir() {
             Excluido = true;
         }
@@ -31,7 +38,8 @@ namespace DIO.Series {
             return "Gênero:" + Genero + Environment.NewLine +
                 "Título: " + Titulo + Environment.NewLine +
                 "Descrição: " + Descricao + Environment.NewLine +
-                "Ano de Início: " + Ano;
+                "Ano de Início: " + Ano+ Environment.NewLine +
+                "Excluido: " + Excluido;
         }
     }
 }
