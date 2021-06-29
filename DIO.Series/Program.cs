@@ -43,7 +43,8 @@ namespace DIO.Series {
                 return;
             }
             foreach(var serie in lista){
-                Console.WriteLine($"ID {serie.RetornaId()} - {serie.RetornaTitulo()} - {serie.RetornaExcluido()}");
+                string excluido = (serie.RetornaExcluido() ? "Excluido" : "Disponível");
+                Console.WriteLine($"ID {serie.RetornaId()} - {serie.RetornaTitulo()} - {excluido}");
             }
         }
         

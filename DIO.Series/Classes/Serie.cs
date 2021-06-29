@@ -24,12 +24,19 @@ namespace DIO.Series {
         public int RetornaId() {
             return Id;
         }
-        public string RetornaExcluido(){
-            if (Excluido){
-                return "Excluida";
-            } else {
-                return "Disponível";
-            }
+        public int retornaGenero(){
+            return (int)Genero;
+        }
+        public int retornaAno(){
+            return Ano;
+        }
+        public string retornaDescricao(){
+            return Descricao;
+        }
+        public bool RetornaExcluid
+
+        public bool RetornaExcluido(){
+            return Excluido;
         }
         public void Excluir() {
             Excluido = true;
