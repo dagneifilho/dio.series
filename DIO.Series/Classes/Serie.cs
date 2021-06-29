@@ -17,6 +17,14 @@ namespace DIO.Series {
             Ano = ano;
             Excluido = false;
         }
+        public Serie(int id, Genero genero, string titulo, string descricao, int ano, bool excluido) {
+            Id = id;
+            Genero = genero;
+            Titulo = titulo;
+            Descricao = descricao;
+            Ano = ano;
+            Excluido = excluido;
+        }
 
         public string RetornaTitulo() {
             return Titulo;
@@ -24,16 +32,15 @@ namespace DIO.Series {
         public int RetornaId() {
             return Id;
         }
-        public int retornaGenero(){
+        public int RetornaGenero(){
             return (int)Genero;
         }
-        public int retornaAno(){
+        public int RetornaAno(){
             return Ano;
         }
-        public string retornaDescricao(){
+        public string RetornaDescricao(){
             return Descricao;
         }
-        public bool RetornaExcluid
 
         public bool RetornaExcluido(){
             return Excluido;
